@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Administrative Intern | Natalia</title>
+    <title>Administrative Intern | Summarecon Agung | Natalia</title>
 
     <style>
 
@@ -43,6 +43,7 @@
 
         nav h2 {
             font-size: 20px;
+            letter-spacing: -0.5px;
         }
 
         nav a {
@@ -79,10 +80,11 @@
 
         .hero h2 {
             max-width: 800px;
-            font-size: 23px;
+            font-size: 22px;
+            line-height: 1.5;
             font-weight: 500;
             color: #555;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .hero-description {
@@ -92,7 +94,7 @@
         }
 
         main {
-            background: #fff;
+            background: #ffffff;
         }
 
         .section {
@@ -101,63 +103,106 @@
             padding: 90px 7%;
         }
 
-        .details {
-            display: grid;
-            grid-template-columns: 0.8fr 1.2fr;
-            gap: 70px;
-        }
-
-        .details h2 {
+        .section h2 {
             font-size: 40px;
             line-height: 1.15;
             letter-spacing: -2px;
             margin-bottom: 25px;
         }
 
-        .details p {
+        .section p {
+            max-width: 750px;
             color: #555;
+            font-size: 16px;
+            line-height: 1.8;
             margin-bottom: 20px;
         }
 
-        .details ul {
-            padding-left: 20px;
-            color: #555;
+        .overview {
+            background: #f8f7f4;
         }
 
-        .details li {
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 45px;
+        }
+
+        .overview-card {
+            padding: 30px;
+            background: #ffffff;
+            border: 1px solid #e3dfd8;
+        }
+
+        .overview-card span {
+            display: block;
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        .overview-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .overview-card p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 70px;
+            align-items: start;
+        }
+
+        .details-label {
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .details-content h2 {
+            margin-bottom: 25px;
+        }
+
+        .details-content ul {
+            padding-left: 20px;
+            margin-top: 25px;
+        }
+
+        .details-content li {
             margin-bottom: 12px;
+            color: #555;
         }
 
         .documentation {
             background: #f8f7f4;
         }
 
-        .documentation h2 {
-            font-size: 40px;
-            letter-spacing: -2px;
-            margin-bottom: 20px;
-        }
-
-        .documentation-intro {
-            max-width: 700px;
-            color: #666;
-            margin-bottom: 45px;
+        .documentation-header {
+            margin-bottom: 50px;
         }
 
         .gallery {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
 
         .gallery-item {
-            background: #fff;
+            background: #ffffff;
             border: 1px solid #e3dfd8;
             overflow: hidden;
         }
 
-        .gallery-item img,
-        .gallery-item video {
+        .gallery-item img {
             width: 100%;
             height: auto;
             display: block;
@@ -173,23 +218,35 @@
         }
 
         .gallery-caption p {
-            color: #777;
             font-size: 13px;
+            margin: 0;
+            color: #777;
         }
 
-        .document-box {
+        .video-box {
+            margin-top: 25px;
+            background: #ffffff;
+            border: 1px solid #e3dfd8;
+            padding: 20px;
+        }
+
+        .video-box video {
+            width: 100%;
+            display: block;
+        }
+
+        .output-box {
             margin-top: 50px;
             padding: 35px;
-            background: #fff;
             border: 1px solid #ddd8d0;
+            background: #f8f7f4;
         }
 
-        .document-box h3 {
-            margin-bottom: 10px;
+        .output-box h3 {
+            margin-bottom: 15px;
         }
 
-        .document-box p {
-            color: #666;
+        .output-box p {
             margin-bottom: 20px;
         }
 
@@ -197,7 +254,7 @@
             display: inline-block;
             padding: 13px 25px;
             background: #252525;
-            color: #fff;
+            color: #ffffff !important;
             text-decoration: none;
             border-radius: 4px;
             font-size: 14px;
@@ -220,6 +277,10 @@
 
         @media (max-width: 800px) {
 
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
             .details {
                 grid-template-columns: 1fr;
                 gap: 30px;
@@ -233,6 +294,10 @@
                 padding-top: 80px;
             }
 
+            .hero h1 {
+                letter-spacing: -3px;
+            }
+
             .section {
                 padding: 70px 7%;
             }
@@ -242,7 +307,6 @@
     </style>
 
 </head>
-
 
 <body>
 
@@ -268,7 +332,7 @@
     <section class="hero">
 
         <p class="label">
-            EXPERIENCE · 2025–2026
+            PROFESSIONAL EXPERIENCE · 2025 — 2026
         </p>
 
         <h1>
@@ -281,10 +345,9 @@
         </h2>
 
         <p class="hero-description">
-            An internship experience supporting administrative
-            and operational activities within a housing development
-            project, with a focus on data management, documentation,
-            coordination, and resident services.
+            Administrative internship experience supporting
+            project administration, data management, documentation,
+            and operational coordination within a housing development project.
         </p>
 
     </section>
@@ -293,7 +356,77 @@
     <main>
 
 
-        <!-- ROLE -->
+        <!-- OVERVIEW -->
+
+        <section class="section overview">
+
+            <p class="label">
+                EXPERIENCE OVERVIEW
+            </p>
+
+            <h2>
+                Administrative support
+                within a project environment.
+            </h2>
+
+            <div class="overview-grid">
+
+                <div class="overview-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        Administration
+                    </h3>
+
+                    <p>
+                        Supported administrative activities,
+                        data recording, and document management
+                        within the project environment.
+                    </p>
+
+                </div>
+
+
+                <div class="overview-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        Operations
+                    </h3>
+
+                    <p>
+                        Supported operational processes related
+                        to housing units, resident services,
+                        and project activities.
+                    </p>
+
+                </div>
+
+
+                <div class="overview-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        Coordination
+                    </h3>
+
+                    <p>
+                        Coordinated with relevant teams to support
+                        administrative accuracy and operational
+                        efficiency.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESPONSIBILITIES -->
 
         <section class="section">
 
@@ -301,52 +434,50 @@
 
                 <div>
 
-                    <p class="label">
-                        ROLE & RESPONSIBILITIES
+                    <p class="details-label">
+                        MY RESPONSIBILITIES
                     </p>
 
                 </div>
 
 
-                <div>
+                <div class="details-content">
 
                     <h2>
-                        Supporting operations
-                        through organized administration.
+                        What I worked on.
                     </h2>
 
                     <p>
                         During my internship, I supported administrative
-                        and operational processes within the project
-                        environment.
+                        and operational activities within the housing
+                        development project.
                     </p>
 
                     <ul>
 
                         <li>
-                            Recorded and monitored housing unit keys.
+                            Recorded and monitored the movement of
+                            housing unit keys.
                         </li>
 
                         <li>
-                            Managed and updated administrative data.
+                            Managed and updated administrative data
+                            accurately and systematically.
                         </li>
 
                         <li>
-                            Organized project documentation.
+                            Organized project documentation,
+                            including documents related to complaint handling.
                         </li>
 
                         <li>
-                            Supported complaint-related documentation.
-                        </li>
-
-                        <li>
-                            Assisted project management and operational
-                            activities.
+                            Provided administrative support for
+                            project management and operational processes.
                         </li>
 
                         <li>
                             Coordinated with relevant teams to support
-                            operational processes and resident services.
+                            operational efficiency and resident services.
                         </li>
 
                     </ul>
@@ -362,18 +493,22 @@
 
         <section class="section documentation">
 
-            <p class="label">
-                EXPERIENCE DOCUMENTATION
-            </p>
+            <div class="documentation-header">
 
-            <h2>
-                A glimpse into the experience.
-            </h2>
+                <p class="label">
+                    PROJECT DOCUMENTATION
+                </p>
 
-            <p class="documentation-intro">
-                Selected documentation from my internship experience
-                at Summarecon Crown Gading.
-            </p>
+                <h2>
+                    Behind the experience.
+                </h2>
+
+                <p>
+                    Selected documentation from my internship
+                    experience at Summarecon Crown Gading.
+                </p>
+
+            </div>
 
 
             <div class="gallery">
@@ -385,18 +520,18 @@
 
                     <img
                         src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Experience%20Summarecon%201.jpeg"
-                        alt="Experience at Summarecon"
+                        alt="Documentation internship at Summarecon"
                     >
 
                     <div class="gallery-caption">
 
                         <h3>
-                            Internship Experience
+                            Internship Documentation
                         </h3>
 
                         <p>
-                            Documentation from my internship
-                            experience at Summarecon.
+                            Selected documentation from the
+                            internship experience.
                         </p>
 
                     </div>
@@ -408,22 +543,10 @@
 
                 <div class="gallery-item">
 
-                    <video controls>
-
-                        <source
-                            src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Experience%20summarecon%202.mp4"
-                            type="video/mp4"
-                        >
-
-                        Your browser does not support
-                        video playback.
-
-                    </video>
-
                     <div class="gallery-caption">
 
                         <h3>
-                            Internship Documentation
+                            Internship Activity
                         </h3>
 
                         <p>
@@ -433,6 +556,18 @@
 
                     </div>
 
+                    <video controls>
+
+                        <source
+                            src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Experience%20summarecon%202.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support
+                        the video element.
+
+                    </video>
+
                 </div>
 
 
@@ -441,10 +576,10 @@
 
             <!-- DOCUMENT -->
 
-            <div class="document-box">
+            <div class="output-box">
 
                 <p class="label">
-                    INTERNSHIP DOCUMENT
+                    SUPPORTING DOCUMENT
                 </p>
 
                 <h3>
@@ -452,7 +587,7 @@
                 </h3>
 
                 <p>
-                    Official documentation confirming my
+                    Supporting documentation confirming my
                     internship experience at PT Summarecon Agung Tbk.
                 </p>
 
@@ -462,7 +597,7 @@
                     rel="noopener noreferrer"
                     class="button"
                 >
-                    View Document →
+                    View Internship Document
                 </a>
 
             </div>
