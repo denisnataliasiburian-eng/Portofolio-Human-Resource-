@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HR Recruitment Fundamental | Natalia</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #252525;
+            background: #f8f7f4;
+        }
+
+        header {
+            width: 100%;
+            padding: 22px 7%;
+            background: rgba(248, 247, 244, 0.96);
+            border-bottom: 1px solid #e5e2dc;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: #252525;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #9b735d;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 110px 7% 90px;
+        }
+
+        .label {
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            max-width: 850px;
+            font-size: clamp(45px, 7vw, 78px);
+            line-height: 1;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        .hero h2 {
+            max-width: 800px;
+            font-size: 23px;
+            line-height: 1.5;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .hero-description {
+            max-width: 750px;
+            color: #666;
+            font-size: 17px;
+        }
+
+        main {
+            background: #ffffff;
+        }
+
+        .section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 90px 7%;
+        }
+
+        .section h2 {
+            font-size: 40px;
+            line-height: 1.15;
+            letter-spacing: -2px;
+            margin-bottom: 25px;
+        }
+
+        .section p {
+            max-width: 750px;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .overview {
+            background: #f8f7f4;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 45px;
+        }
+
+        .overview-card {
+            padding: 30px;
+            background: #ffffff;
+            border: 1px solid #e3dfd8;
+        }
+
+        .overview-card span {
+            display: block;
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        .overview-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .overview-card p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .process {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 70px;
+            align-items: start;
+        }
+
+        .process-label {
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .process-content h2 {
+            margin-bottom: 25px;
+        }
+
+        .process-list {
+            padding-left: 20px;
+            margin-top: 25px;
+        }
+
+        .process-list li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        .competencies {
+            background: #f8f7f4;
+        }
+
+        .competency-box {
+            max-width: 850px;
+            padding: 35px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+        }
+
+        .competency-box h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .certificate {
+            margin-top: 50px;
+            padding: 35px;
+            border: 1px solid #ddd8d0;
+            background: #ffffff;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #252525;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #9b735d;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            padding: 30px 7%;
+            background: #252525;
+            color: #999;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        @media (max-width: 800px) {
+
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .hero {
+                padding-top: 80px;
+            }
+
+            .hero h1 {
+                letter-spacing: -3px;
+            }
+
+            .section {
+                padding: 70px 7%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <h2>Portfolio</h2>
+
+            <a href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/">
+                ← Back to Portfolio
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <p class="label">
+            PROFESSIONAL DEVELOPMENT · 2023
+        </p>
+
+        <h1>
+            HR Recruitment Fundamental
+        </h1>
+
+        <h2>
+            Arah Academy
+        </h2>
+
+        <p class="hero-description">
+            Recruitment fundamentals covering the recruitment
+            process, talent needs analysis, sourcing, candidate
+            screening, selection, hiring, and onboarding.
+        </p>
+
+    </section>
+
+
+    <main>
+
+
+        <section class="section overview">
+
+            <p class="label">
+                TRAINING OVERVIEW
+            </p>
+
+            <h2>
+                Building a foundation
+                in recruitment.
+            </h2>
+
+            <div class="overview-grid">
+
+                <div class="overview-card">
+
+                    <span>01</span>
+
+                    <h3>
+                        Recruitment Preparation
+                    </h3>
+
+                    <p>
+                        Understanding HR recruitment, talent needs,
+                        recruitment planning, and recruitment timeline.
+                    </p>
+
+                </div>
+
+
+                <div class="overview-card">
+
+                    <span>02</span>
+
+                    <h3>
+                        Selection Process
+                    </h3>
+
+                    <p>
+                        Sourcing, CV screening, HR interviews,
+                        psychological tests, and technical tests.
+                    </p>
+
+                </div>
+
+
+                <div class="overview-card">
+
+                    <span>03</span>
+
+                    <h3>
+                        Hiring & Onboarding
+                    </h3>
+
+                    <p>
+                        User interview, hiring and offering,
+                        followed by the onboarding process.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="process">
+
+                <div>
+
+                    <p class="process-label">
+                        RECRUITMENT PROCESS
+                    </p>
+
+                </div>
+
+
+                <div class="process-content">
+
+                    <h2>
+                        From talent needs
+                        to onboarding.
+                    </h2>
+
+                    <p>
+                        The training introduced recruitment as an
+                        end-to-end process, beginning with preparation
+                        and talent needs analysis before moving toward
+                        candidate selection and hiring.
+                    </p>
+
+                    <ul class="process-list">
+
+                        <li>
+                            Understanding HR roles and functions
+                        </li>
+
+                        <li>
+                            Understanding the role of HR Recruitment
+                        </li>
+
+                        <li>
+                            Preparing the recruitment process
+                        </li>
+
+                        <li>
+                            Talent needs analysis
+                        </li>
+
+                        <li>
+                            Recruitment timeline
+                        </li>
+
+                        <li>
+                            Talent sourcing
+                        </li>
+
+                        <li>
+                            CV screening
+                        </li>
+
+                        <li>
+                            HR interview
+                        </li>
+
+                        <li>
+                            Psychological test
+                        </li>
+
+                        <li>
+                            Technical test
+                        </li>
+
+                        <li>
+                            User interview
+                        </li>
+
+                        <li>
+                            Hiring and offering
+                        </li>
+
+                        <li>
+                            Onboarding
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section competencies">
+
+            <p class="label">
+                RECRUITMENT COMPETENCIES
+            </p>
+
+            <div class="competency-box">
+
+                <h3>
+                    Understanding recruitment fundamentals
+                </h3>
+
+                <p>
+                    The training also addressed recruitment
+                    competencies and challenges, providing a
+                    foundation for understanding how recruitment
+                    activities connect across the candidate journey.
+                </p>
+
+            </div>
+
+
+            <div class="certificate">
+
+                <p class="label">
+                    CERTIFICATE
+                </p>
+
+                <h3>
+                    HR Recruitment Fundamental
+                </h3>
+
+                <p>
+                    Arah Academy
+                </p>
+
+                <a
+                    href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/certificate-hr-recruitment.html"
+                    class="button"
+                    target="_blank"
+                >
+                    View Certificate
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <a
+                href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/"
+                class="button"
+            >
+                ← Back to Portfolio
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Denis Natalia Siburian ·
+        Psychology · Human Resources · People Development
+
+    </footer>
+
+</body>
+
+</html>
