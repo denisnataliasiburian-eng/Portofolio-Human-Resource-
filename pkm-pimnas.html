@@ -2,12 +2,351 @@
 <html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>PKM-PIMNAS Research Project | Natalia</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #252525;
+            background: #f8f7f4;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            width: 100%;
+            padding: 22px 7%;
+            background: rgba(248, 247, 244, 0.96);
+            border-bottom: 1px solid #e5e2dc;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        nav a {
+            color: #252525;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #9b735d;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 110px 7% 90px;
+        }
+
+        .label {
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            font-size: clamp(45px, 7vw, 82px);
+            line-height: 1;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        .hero h2 {
+            max-width: 800px;
+            font-size: 22px;
+            line-height: 1.5;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .hero-description {
+            max-width: 750px;
+            color: #666;
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           MAIN CONTENT
+        ========================= */
+
+        main {
+            background: #ffffff;
+        }
+
+        .section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 90px 7%;
+        }
+
+        .section h2 {
+            font-size: 40px;
+            line-height: 1.15;
+            letter-spacing: -2px;
+            margin-bottom: 25px;
+        }
+
+        .section p {
+            max-width: 750px;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================
+           PROJECT OVERVIEW
+        ========================= */
+
+        .overview {
+            background: #f8f7f4;
+        }
+
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 45px;
+        }
+
+        .overview-card {
+            padding: 30px;
+            background: #ffffff;
+            border: 1px solid #e3dfd8;
+        }
+
+        .overview-card span {
+            display: block;
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        .overview-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .overview-card p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+
+        /* =========================
+           PROJECT DETAILS
+        ========================= */
+
+        .details {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 70px;
+            align-items: start;
+        }
+
+        .details-label {
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .details-content h2 {
+            margin-bottom: 25px;
+        }
+
+        .details-content ul {
+            padding-left: 20px;
+            margin-top: 25px;
+        }
+
+        .details-content li {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+
+        /* =========================
+           DOCUMENTATION
+        ========================= */
+
+        .documentation {
+            background: #f8f7f4;
+        }
+
+        .documentation-header {
+            margin-bottom: 50px;
+        }
+
+        .documentation-header p {
+            max-width: 700px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .gallery-item {
+            background: #ffffff;
+            border: 1px solid #e3dfd8;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 18px 20px;
+        }
+
+        .gallery-caption h3 {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .gallery-caption p {
+            font-size: 13px;
+            margin: 0;
+            color: #777;
+        }
+
+
+        /* =========================
+           OUTPUT
+        ========================= */
+
+        .output-box {
+            margin-top: 50px;
+            padding: 35px;
+            border: 1px solid #ddd8d0;
+            background: #f8f7f4;
+        }
+
+        .output-box h3 {
+            margin-bottom: 15px;
+        }
+
+        .output-box p {
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        .button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #252525;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #9b735d;
+            transform: translateY(-3px);
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            padding: 30px 7%;
+            background: #252525;
+            color: #999;
+            text-align: center;
+            font-size: 12px;
+        }
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
+
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .details {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 80px;
+            }
+
+            .hero h1 {
+                letter-spacing: -3px;
+            }
+
+            .section {
+                padding: 70px 7%;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -15,9 +354,7 @@
 <body>
 
 
-    <!-- ================================
-         HEADER
-    ================================= -->
+    <!-- HEADER -->
 
     <header>
 
@@ -25,7 +362,7 @@
 
             <h2>Portfolio</h2>
 
-            <a href="index.html">
+            <a href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/">
                 ← Back to Portfolio
             </a>
 
@@ -34,187 +371,102 @@
     </header>
 
 
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <p class="label">
+            FEATURED PROJECT · 2025
+        </p>
+
+        <h1>
+            PKM-PIMNAS Research Project
+        </h1>
+
+        <h2>
+            Psychological Interventions for Generation Alpha
+            Elementary School Students Who Have Experienced
+            Sexual Violence in Bekasi City
+        </h2>
+
+        <p class="hero-description">
+            A nationally funded social research project focusing
+            on psychological interventions and trauma-informed
+            approaches for elementary school students who
+            experienced sexual violence in Bekasi City.
+        </p>
+
+    </section>
+
 
     <main>
 
 
-        <!-- ================================
-             PROJECT HERO
-        ================================= -->
+        <!-- PROJECT OVERVIEW -->
 
-        <section class="project-detail-hero">
+        <section class="section overview">
 
-            <p>
-                FEATURED PROJECT · 2025
-            </p>
-
-
-            <h1>
-                PKM-PIMNAS
-                Research Project
-            </h1>
-
-
-            <p>
-
-                Psychological Interventions for Generation Alpha
-                Elementary School Students Who Have Experienced
-                Sexual Violence in Bekasi City.
-
-            </p>
-
-
-            <div class="project-meta">
-
-                <span>Research</span>
-
-                <span>Psychology</span>
-
-                <span>Trauma-Informed Care</span>
-
-                <span>PIMNAS</span>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================================
-             PROJECT OVERVIEW
-        ================================= -->
-
-        <section>
-
-            <p>
+            <p class="label">
                 PROJECT OVERVIEW
             </p>
 
-
             <h2>
-                Research with
-                a people-centered approach.
+                Research at the intersection
+                of psychology and social impact.
             </h2>
 
 
-            <p>
-
-                This research project focused on psychological
-                interventions for Generation Alpha elementary school
-                students who experienced sexual violence in Bekasi City.
-
-                The project applied a Trauma-Informed Care approach
-                to support the development of a safer and more
-                responsive school environment.
-
-            </p>
+            <div class="overview-grid">
 
 
-            <p>
-
-                The project was developed through PKM-RSH and
-                successfully advanced to the National Student
-                Scientific Week (PIMNAS) 2025.
-
-            </p>
-
-        </section>
-
-
-
-        <!-- ================================
-             MY CONTRIBUTION
-        ================================= -->
-
-        <section>
-
-            <p>
-                MY CONTRIBUTION
-            </p>
-
-
-            <h2>
-                What I contributed
-                to the project.
-            </h2>
-
-
-            <div>
-
-
-                <article>
+                <div class="overview-card">
 
                     <span>01</span>
 
                     <h3>
-                        Research Planning
+                        Research
                     </h3>
 
                     <p>
-
-                        Contributed to research planning,
-                        preparation, and implementation.
-
+                        Social and psychological research
+                        focusing on children affected by
+                        sexual violence.
                     </p>
 
-                </article>
+                </div>
 
 
-
-                <article>
+                <div class="overview-card">
 
                     <span>02</span>
 
                     <h3>
-                        Data Collection
+                        Approach
                     </h3>
 
                     <p>
-
-                        Participated in field data collection,
-                        interviews, and observation activities.
-
+                        Trauma-Informed Care as a framework
+                        for understanding psychological
+                        needs and intervention.
                     </p>
 
-                </article>
+                </div>
 
 
-
-                <article>
+                <div class="overview-card">
 
                     <span>03</span>
 
                     <h3>
-                        Qualitative Research
+                        PIMNAS
                     </h3>
 
                     <p>
-
-                        Contributed to qualitative data exploration
-                        and research documentation.
-
+                        Research project presented at the
+                        national PIMNAS forum in 2025.
                     </p>
 
-                </article>
-
-
-
-                <article>
-
-                    <span>04</span>
-
-                    <h3>
-                        Research Output
-                    </h3>
-
-                    <p>
-
-                        Contributed to research reports,
-                        project outputs, and presentation preparation.
-
-                    </p>
-
-                </article>
+                </div>
 
 
             </div>
@@ -222,139 +474,172 @@
         </section>
 
 
+        <!-- MY CONTRIBUTION -->
 
-        <!-- ================================
-             01 — RESEARCH & FIELDWORK
-        ================================= -->
+        <section class="section">
 
-        <section>
+            <div class="details">
 
-            <p>
-                01 — RESEARCH & FIELDWORK
-            </p>
+                <div>
 
+                    <p class="details-label">
+                        MY CONTRIBUTION
+                    </p>
 
-            <h2>
-                From research
-                to field implementation.
-            </h2>
+                </div>
 
 
-            <p>
+                <div class="details-content">
 
-                Documentation of activities conducted throughout
-                the research process.
+                    <h2>
+                        From research planning
+                        to project presentation.
+                    </h2>
 
-            </p>
+                    <p>
+                        I contributed to several stages of the
+                        research process, including preparation,
+                        data collection, qualitative exploration,
+                        documentation, and presentation.
+                    </p>
 
+                    <ul>
 
+                        <li>
+                            Contributed to research planning
+                            and implementation.
+                        </li>
 
-            <!-- FOTO 1 -->
+                        <li>
+                            Participated in research instrument
+                            development and field data collection.
+                        </li>
 
-            <figure>
+                        <li>
+                            Conducted interviews and explored
+                            qualitative data.
+                        </li>
 
-                <img
-                    src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/PKM%202.jpeg"
-                    alt="Research and fieldwork documentation"
-                >
+                        <li>
+                            Contributed to research reports
+                            and project outputs.
+                        </li>
 
-                <figcaption>
-                    Research & Fieldwork
-                </figcaption>
+                        <li>
+                            Participated in presenting research
+                            findings at the PIMNAS forum.
+                        </li>
 
-            </figure>
+                    </ul>
 
+                </div>
 
-
-            <!-- FOTO 2 -->
-
-            <figure>
-
-                <img
-                    src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/PKM%203.jpeg"
-                    alt="Field research activity"
-                >
-
-                <figcaption>
-                    Field Research Activity
-                </figcaption>
-
-            </figure>
-
-
-
-            <!-- FOTO 3 -->
-
-            <figure>
-
-                <img
-                    src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/PKM%204.jpeg"
-                    alt="Research activity"
-                >
-
-                <figcaption>
-                    Research Activity
-                </figcaption>
-
-            </figure>
-
+            </div>
 
         </section>
 
 
+        <!-- DOCUMENTATION -->
 
-        <!-- ================================
-             02 — RESEARCH OUTPUT
-        ================================= -->
+        <section class="section documentation">
 
-        <section>
+            <div class="documentation-header">
 
-            <p>
-                02 — RESEARCH OUTPUT
-            </p>
-
-
-            <h2>
-                From research
-                to meaningful output.
-            </h2>
-
-
-            <p>
-
-                Explore the research documentation,
-                outputs, publications, and related materials.
-
-            </p>
-
-
-
-            <div>
-
-                <p>
-                    PKM-RSH
+                <p class="label">
+                    PROJECT DOCUMENTATION
                 </p>
 
+                <h2>
+                    Behind the research.
+                </h2>
+
+                <p>
+                    Selected documentation from the research
+                    process and PIMNAS 2025 activities.
+                </p>
+
+            </div>
+
+
+            <div class="gallery">
+
+
+                <!-- FOTO PIMNAS -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Finalis%20PIMNAS%209.jpeg"
+                        alt="Finalis PIMNAS 2025"
+                    >
+
+                    <div class="gallery-caption">
+
+                        <h3>
+                            PIMNAS 2025
+                        </h3>
+
+                        <p>
+                            Participation in the national
+                            student research forum.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FOTO SERTIFIKAT -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/PKM%20PIMNAS%202025.jpg"
+                        alt="Certificate PIMNAS 2025"
+                    >
+
+                    <div class="gallery-caption">
+
+                        <h3>
+                            PIMNAS 2025 Certificate
+                        </h3>
+
+                        <p>
+                            Recognition of participation
+                            in PIMNAS 2025.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- OUTPUT -->
+
+            <div class="output-box">
+
+                <p class="label">
+                    PROJECT OUTPUT
+                </p>
 
                 <h3>
-                    Trauma-Informed Care for Kids
+                    Research and academic outputs
                 </h3>
 
-
                 <p>
-
-                    Research documentation, project outputs,
-                    publications, and related materials.
-
+                    The project produced research documentation,
+                    academic outputs, and participation in the
+                    national PIMNAS forum.
                 </p>
 
-
                 <a
-                    href="https://linktr.ee/pkmrshticforkids"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="certificate-pkm-pimnas.html"
+                    class="button"
                 >
-                    Explore Research Project ↗
+                    View Certificate
                 </a>
 
             </div>
@@ -362,159 +647,27 @@
         </section>
 
 
+        <!-- BACK -->
 
-        <!-- ================================
-             03 — PIMNAS 2025
-        ================================= -->
+        <section class="section">
 
-        <section>
-
-            <p>
-                03 — PIMNAS 2025
-            </p>
-
-
-            <h2>
-                Taking the research
-                to the national stage.
-            </h2>
-
-
-            <p>
-
-                Documentation from the PIMNAS 2025 experience
-                as part of the research team.
-
-            </p>
-
-
-
-            <!-- PIMNAS FOTO 1 -->
-
-            <figure>
-
-                <img
-                    src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Finalis%20PIMNAS%206.jpeg"
-                    alt="Finalis PIMNAS 2025"
-                >
-
-                <figcaption>
-                    PIMNAS 2025
-                </figcaption>
-
-            </figure>
-
-
-
-            <!-- PIMNAS FOTO 2 -->
-
-            <figure>
-
-                <img
-                    src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Finalis%20PIMNAS%207.jpeg"
-                    alt="Finalis PIMNAS 2025"
-                >
-
-                <figcaption>
-                    PIMNAS 2025
-                </figcaption>
-
-            </figure>
-
-
-
-            <!-- PIMNAS FOTO 3 -->
-
-            <figure>
-
-                <img
-                    src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Finalis%20PIMNAS%209.jpeg"
-                    alt="Finalis PIMNAS 2025"
-                >
-
-                <figcaption>
-                    PIMNAS 2025
-                </figcaption>
-
-            </figure>
-
-
-
-            <!-- VIDEO -->
-
-            <div>
-
-                <p>
-                    VIDEO DOCUMENTATION
-                </p>
-
-
-                <video controls>
-
-                    <source
-                        src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Finalis%20PIMNAS%208.mp4"
-                        type="video/mp4"
-                    >
-
-                    Your browser does not support
-                    the video element.
-
-                </video>
-
-            </div>
-
+            <a
+                href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/"
+                class="button"
+            >
+                ← Back to Portfolio
+            </a>
 
         </section>
-
-
-
-        <!-- ================================
-             PROJECT TAKEAWAY
-        ================================= -->
-
-        <section>
-
-            <p>
-                PROJECT TAKEAWAY
-            </p>
-
-
-            <h2>
-                Research, collaboration,
-                and meaningful impact.
-            </h2>
-
-
-            <p>
-
-                This experience strengthened my ability to work
-                collaboratively, engage with research processes,
-                manage field activities, and communicate research
-                findings within a national academic forum.
-
-            </p>
-
-        </section>
-
 
 
     </main>
 
 
-
-    <!-- ================================
-         FOOTER
-    ================================= -->
-
     <footer>
 
-        <p>
-            © 2026 Denis Natalia Siburian
-        </p>
-
-        <p>
-            Psychology · Research · Human Resources
-        </p>
+        © 2026 Denis Natalia Siburian ·
+        Psychology · Human Resources · People Development
 
     </footer>
 
