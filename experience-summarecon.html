@@ -20,12 +20,20 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: #f8f7f4;
             color: #252525;
             min-height: 100vh;
         }
+
+        /* =========================
+           HEADER
+        ========================= */
 
         header {
             width: 100%;
@@ -44,17 +52,24 @@
 
         nav h2 {
             font-size: 20px;
+            font-weight: 700;
         }
 
         nav a {
             color: #252525;
             text-decoration: none;
             font-size: 14px;
+            transition: 0.3s ease;
         }
 
         nav a:hover {
             color: #9b735d;
         }
+
+
+        /* =========================
+           DOCUMENT HEADER
+        ========================= */
 
         .document-header {
             max-width: 1100px;
@@ -84,25 +99,36 @@
             line-height: 1.8;
         }
 
+
+        /* =========================
+           PDF SECTION
+        ========================= */
+
         .document-section {
             max-width: 1100px;
             margin: auto;
             padding: 20px 7% 90px;
         }
 
-        .pdf-viewer {
+        .pdf-wrapper {
             width: 100%;
-            height: 900px;
             background: #ffffff;
             border: 1px solid #ddd8d0;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
         }
 
-        .pdf-viewer iframe {
+        .pdf-viewer {
             width: 100%;
-            height: 100%;
+            height: 900px;
             border: none;
+            display: block;
         }
+
+
+        /* =========================
+           ACTION BUTTONS
+        ========================= */
 
         .document-actions {
             margin-top: 25px;
@@ -138,6 +164,11 @@
             color: #ffffff;
         }
 
+
+        /* =========================
+           FOOTER
+        ========================= */
+
         footer {
             padding: 30px 7%;
             background: #252525;
@@ -146,14 +177,65 @@
             font-size: 12px;
         }
 
+
+        /* =========================
+           MOBILE
+        ========================= */
+
         @media (max-width: 800px) {
 
+            header {
+                padding: 20px 6%;
+            }
+
+            nav h2 {
+                font-size: 18px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
             .document-header {
-                padding-top: 55px;
+                padding: 55px 6% 35px;
+            }
+
+            h1 {
+                letter-spacing: -2px;
+            }
+
+            .document-section {
+                padding: 20px 6% 70px;
             }
 
             .pdf-viewer {
                 height: 700px;
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            nav {
+                gap: 20px;
+            }
+
+            nav a {
+                text-align: right;
+            }
+
+            .pdf-viewer {
+                height: 600px;
+            }
+
+            .document-actions {
+                flex-direction: column;
+            }
+
+            .button {
+                text-align: center;
+                width: 100%;
             }
 
         }
@@ -166,7 +248,9 @@
 <body>
 
 
-    <!-- HEADER -->
+    <!-- =========================
+         HEADER
+    ========================= -->
 
     <header>
 
@@ -174,9 +258,7 @@
 
             <h2>Portfolio</h2>
 
-            <a
-                href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/experience-summarecon.html"
-            >
+            <a href="experience-summarecon.html">
                 ← Back to Experience
             </a>
 
@@ -185,7 +267,10 @@
     </header>
 
 
-    <!-- DOCUMENT HEADER -->
+
+    <!-- =========================
+         DOCUMENT INTRO
+    ========================= -->
 
     <section class="document-header">
 
@@ -206,25 +291,35 @@
     </section>
 
 
-    <!-- PDF VIEWER -->
+
+    <!-- =========================
+         PDF VIEWER
+    ========================= -->
 
     <section class="document-section">
 
-        <div class="pdf-viewer">
+        <div class="pdf-wrapper">
 
             <iframe
-                src="https://docs.google.com/gview?embedded=1&url=https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Expirience%20Summarecon.pdf"
-                title="Internship Document"
+                class="pdf-viewer"
+                src="https://docs.google.com/gview?embedded=true&url=https%3A%2F%2Fraw.githubusercontent.com%2Fdenisnataliasiburian-eng%2FPortofolio-Human-Resource-%2Frefs%2Fheads%2Fmain%2FExpirience%2520Summarecon.pdf"
+                title="Internship Document PDF"
+                loading="lazy"
             >
             </iframe>
 
         </div>
 
 
+
+        <!-- =========================
+             ACTIONS
+        ========================= -->
+
         <div class="document-actions">
 
             <a
-                href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/experience-summarecon.html"
+                href="experience-summarecon.html"
                 class="button"
             >
                 ← Back to Experience
@@ -233,6 +328,7 @@
             <a
                 href="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Expirience%20Summarecon.pdf"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="button button-outline"
             >
                 Open PDF
@@ -242,6 +338,11 @@
 
     </section>
 
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
     <footer>
 
