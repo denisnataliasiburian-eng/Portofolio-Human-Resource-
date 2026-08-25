@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administrative Intern | Natalia</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: #252525;
+            background: #f8f7f4;
+        }
+
+        header {
+            width: 100%;
+            padding: 22px 7%;
+            background: rgba(248, 247, 244, 0.96);
+            border-bottom: 1px solid #e5e2dc;
+        }
+
+        nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 20px;
+        }
+
+        nav a {
+            color: #252525;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #9b735d;
+        }
+
+        .hero {
+            max-width: 1100px;
+            margin: auto;
+            padding: 110px 7% 90px;
+        }
+
+        .label {
+            color: #9b735d;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            font-size: clamp(45px, 7vw, 78px);
+            line-height: 1;
+            letter-spacing: -4px;
+            margin-bottom: 25px;
+        }
+
+        .hero h2 {
+            max-width: 800px;
+            font-size: 23px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 750px;
+            color: #666;
+            font-size: 17px;
+        }
+
+        main {
+            background: #fff;
+        }
+
+        .section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 90px 7%;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 0.8fr 1.2fr;
+            gap: 70px;
+        }
+
+        .details h2 {
+            font-size: 40px;
+            line-height: 1.15;
+            letter-spacing: -2px;
+            margin-bottom: 25px;
+        }
+
+        .details p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .details ul {
+            padding-left: 20px;
+            color: #555;
+        }
+
+        .details li {
+            margin-bottom: 12px;
+        }
+
+        .documentation {
+            background: #f8f7f4;
+        }
+
+        .documentation h2 {
+            font-size: 40px;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .documentation-intro {
+            max-width: 700px;
+            color: #666;
+            margin-bottom: 45px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+
+        .gallery-item {
+            background: #fff;
+            border: 1px solid #e3dfd8;
+            overflow: hidden;
+        }
+
+        .gallery-item img,
+        .gallery-item video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-caption {
+            padding: 18px 20px;
+        }
+
+        .gallery-caption h3 {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .gallery-caption p {
+            color: #777;
+            font-size: 13px;
+        }
+
+        .document-box {
+            margin-top: 50px;
+            padding: 35px;
+            background: #fff;
+            border: 1px solid #ddd8d0;
+        }
+
+        .document-box h3 {
+            margin-bottom: 10px;
+        }
+
+        .document-box p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 25px;
+            background: #252525;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .button:hover {
+            background: #9b735d;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            padding: 30px 7%;
+            background: #252525;
+            color: #999;
+            text-align: center;
+            font-size: 12px;
+        }
+
+        @media (max-width: 800px) {
+
+            .details {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .hero {
+                padding-top: 80px;
+            }
+
+            .section {
+                padding: 70px 7%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <nav>
+
+            <h2>Portfolio</h2>
+
+            <a href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/">
+                ← Back to Portfolio
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <p class="label">
+            EXPERIENCE · 2025–2026
+        </p>
+
+        <h1>
+            Administrative Intern
+        </h1>
+
+        <h2>
+            PT Summarecon Agung Tbk —
+            Summarecon Crown Gading
+        </h2>
+
+        <p class="hero-description">
+            An internship experience supporting administrative
+            and operational activities within a housing development
+            project, with a focus on data management, documentation,
+            coordination, and resident services.
+        </p>
+
+    </section>
+
+
+    <main>
+
+
+        <!-- ROLE -->
+
+        <section class="section">
+
+            <div class="details">
+
+                <div>
+
+                    <p class="label">
+                        ROLE & RESPONSIBILITIES
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h2>
+                        Supporting operations
+                        through organized administration.
+                    </h2>
+
+                    <p>
+                        During my internship, I supported administrative
+                        and operational processes within the project
+                        environment.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Recorded and monitored housing unit keys.
+                        </li>
+
+                        <li>
+                            Managed and updated administrative data.
+                        </li>
+
+                        <li>
+                            Organized project documentation.
+                        </li>
+
+                        <li>
+                            Supported complaint-related documentation.
+                        </li>
+
+                        <li>
+                            Assisted project management and operational
+                            activities.
+                        </li>
+
+                        <li>
+                            Coordinated with relevant teams to support
+                            operational processes and resident services.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DOCUMENTATION -->
+
+        <section class="section documentation">
+
+            <p class="label">
+                EXPERIENCE DOCUMENTATION
+            </p>
+
+            <h2>
+                A glimpse into the experience.
+            </h2>
+
+            <p class="documentation-intro">
+                Selected documentation from my internship experience
+                at Summarecon Crown Gading.
+            </p>
+
+
+            <div class="gallery">
+
+
+                <!-- FOTO -->
+
+                <div class="gallery-item">
+
+                    <img
+                        src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Experience%20Summarecon%201.jpeg"
+                        alt="Experience at Summarecon"
+                    >
+
+                    <div class="gallery-caption">
+
+                        <h3>
+                            Internship Experience
+                        </h3>
+
+                        <p>
+                            Documentation from my internship
+                            experience at Summarecon.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- VIDEO -->
+
+                <div class="gallery-item">
+
+                    <video controls>
+
+                        <source
+                            src="https://raw.githubusercontent.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/refs/heads/main/Experience%20summarecon%202.mp4"
+                            type="video/mp4"
+                        >
+
+                        Your browser does not support
+                        video playback.
+
+                    </video>
+
+                    <div class="gallery-caption">
+
+                        <h3>
+                            Internship Documentation
+                        </h3>
+
+                        <p>
+                            Video documentation from the
+                            internship experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- DOCUMENT -->
+
+            <div class="document-box">
+
+                <p class="label">
+                    INTERNSHIP DOCUMENT
+                </p>
+
+                <h3>
+                    Internship Certificate
+                </h3>
+
+                <p>
+                    Official documentation confirming my
+                    internship experience at PT Summarecon Agung Tbk.
+                </p>
+
+                <a
+                    href="https://github.com/denisnataliasiburian-eng/Portofolio-Human-Resource-/blob/main/Expirience%20Summarecon.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button"
+                >
+                    View Document →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- BACK -->
+
+        <section class="section">
+
+            <a
+                href="https://denisnataliasiburian-eng.github.io/Portofolio-Human-Resource-/"
+                class="button"
+            >
+                ← Back to Portfolio
+            </a>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        © 2026 Denis Natalia Siburian ·
+        Psychology · Human Resources · People Development
+
+    </footer>
+
+</body>
+
+</html>
