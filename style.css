@@ -1,0 +1,148 @@
+/* ================================
+   PROJECT DOCUMENTATION
+================================ */
+
+.project-documentation {
+    margin-top: 80px;
+}
+
+.documentation-header {
+    margin-bottom: 40px;
+}
+
+.documentation-header .section-label {
+    margin-bottom: 10px;
+}
+
+.documentation-header h3 {
+    margin-bottom: 15px;
+}
+
+.documentation-header p {
+    max-width: 700px;
+}
+
+
+/* ================================
+   DOCUMENTATION SECTION
+================================ */
+
+.documentation-section {
+    margin-bottom: 70px;
+}
+
+.documentation-title {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.documentation-number {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    opacity: 0.6;
+}
+
+.documentation-title h4 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+
+/* ================================
+   PHOTO GRID
+================================ */
+
+.documentation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/*
+   Foto tidak di-crop.
+   Seluruh bagian foto tetap terlihat.
+*/
+
+.documentation-photo {
+    width: 100%;
+    height: 360px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f5f3;
+    overflow: hidden;
+}
+
+.documentation-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* ================================
+   PIMNAS VIDEO
+================================ */
+
+.documentation-video {
+    width: 100%;
+    background: #f5f5f3;
+}
+
+.documentation-video video {
+    width: 100%;
+    max-height: 600px;
+
+    display: block;
+    object-fit: contain;
+}
+
+
+/* ================================
+   LINKTREE / RESEARCH OUTPUT
+================================ */
+
+.documentation-link {
+    margin-top: 30px;
+}
+
+.documentation-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .documentation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .documentation-photo {
+        height: auto;
+        min-height: 250px;
+    }
+
+    .documentation-title {
+        gap: 10px;
+    }
+
+    .documentation-title h4 {
+        font-size: 1.15rem;
+    }
+
+}
